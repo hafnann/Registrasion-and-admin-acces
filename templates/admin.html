@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin - Login History</title>
+</head>
+<body>
+    <h2>Login History</h2>
+    <table border="1">
+        <tr>
+            <th>Username</th>
+            <th>Login Time</th>
+        </tr>
+        {% for login in logins %}
+        <tr>
+            <td>{{ login[0] }}</td>
+            <td>{{ login[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
